@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation : La Tropical Tangie</title>
+
+    <meta property="og:title" content="Présentation : La Tropical Tangie">
+    <meta property="og:description" content="Découvrez la Tropical Tangie, un cocktail fruité explosif. Explorez ses saveurs d'agrumes, ses effets énergisants et ses caractéristiques.">
+    <meta property="og:image" content="https://placehold.co/1200x630/f97316/ffffff?text=Tropical+Tangie"> 
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .progress-bar-fill {
+            transition: width 0.3s ease-in-out;
+        }
+        /* J'utilise des couleurs orange/tropicales pour la Tropical Tangie */
+        .bg-primary-tropical { background-color: #f97316; } /* Orange 600 */
+        .text-primary-tropical { color: #f97316; } 
+        .bg-secondary-tropical { background-color: #ffedd5; } /* Orange 100 */
+        .text-secondary-tropical { color: #c2410c; } /* Orange 800 */
+        .bg-accent-tropical { background-color: #fdba74; } /* Orange 300 */
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden">
+        <div class="p-4 bg-gray-50 border-b border-gray-200">
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div id="progressBar" class="bg-primary-tropical h-2.5 rounded-full progress-bar-fill" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <div id="presentation-container" class="p-8 md:p-12 min-h-[500px] md:min-h-[550px] flex flex-col justify-center">
+
+            <div class="slide active">
+                <div class="text-center">
+                    <div class="inline-block bg-secondary-tropical text-secondary-tropical text-sm font-semibold px-4 py-2 rounded-full mb-4">
+                        Présentation de Variété
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">La Tropical Tangie</h1>
+                    <p class="text-lg md:text-xl text-gray-600">Le Cocktail d'Agrumes Puissant</p>
+                    <img src="https://placehold.co/600x300/f97316/ffffff?text=Tropical+Tangie" alt="Image de Tropical Tangie" class="mx-auto mt-8 rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">1. Qu'est-ce que la Tropical Tangie ?</h2>
+                <ul class="space-y-4 text-gray-700 text-lg">
+                    <li class="flex items-start"><i data-lucide="sun" class="w-6 h-6 mr-3 text-primary-tropical flex-shrink-0 mt-1"></i><span><strong class="font-semibold text-gray-900">Origine & Popularité :</strong> Un phénotype d'élite de la célèbre **Tangie**.</span></li>
+                    <li class="flex items-start"><i data-lucide="dna" class="w-6 h-6 mr-3 text-primary-tropical flex-shrink-0 mt-1"></i><span><strong class="font-semibold text-gray-900">Génétique :</strong> Sélection d'élite de **Tangie x Tangie**.</span></li>
+                    <li class="flex items-start"><i data-lucide="bar-chart-3" class="w-6 h-6 mr-3 text-primary-tropical flex-shrink-0 mt-1"></i><span><strong class="font-semibold text-gray-900">Dominance :</strong> Clairement **Sativa-dominante** (Effet Sativa puissant).</span></li>
+                    <li class="flex items-start"><i data-lucide="activity" class="w-6 h-6 mr-3 text-primary-tropical flex-shrink-0 mt-1"></i><span><strong class="font-semibold text-gray-900">Teneur en THC :</strong> **Très élevée** (souvent > 20%), high puissant et durable.</span></li>
+                    <li class="flex items-start"><i data-lucide="zap" class="w-6 h-6 mr-3 text-primary-tropical flex-shrink-0 mt-1"></i><span><strong class="font-semibold text-gray-900">Rendement :</strong> Potentiel **XL** pour une Sativa rapide.</span></li>
+                </ul>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">2. Profil Aromatique : Explosion Tropicale</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 flex items-center"><i data-lucide="lemon" class="w-7 h-7 mr-2 text-primary-tropical"></i>Goût</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center"><i data-lucide="dot" class="w-5 h-5 mr-2 text-accent-tropical"></i><strong>Agrumes Intenses :</strong> Mandarine, orange et citron prédominants.</li>
+                            <li class="flex items-center"><i data-lucide="dot" class="w-5 h-5 mr-2 text-accent-tropical"></i><strong>Acidité Fruitée :</strong> Goût acidulé, frais, comme une boisson gazeuse.</li>
+                            <li class="flex items-center"><i data-lucide="dot" class="w-5 h-5 mr-2 text-accent-tropical"></i><strong>Fini Diesel :</strong> Un arrière-goût subtil et piquant de carburant/diesel.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 flex items-center"><i data-lucide="wind" class="w-7 h-7 mr-2 text-primary-tropical"></i>Odeur</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center"><i data-lucide="dot" class="w-5 h-5 mr-2 text-accent-tropical"></i><strong>Pénétrante :</strong> Odeur puissante de fruits tropicaux et d'agrumes.</li>
+                            <li class="flex items-center"><i data-lucide="dot" class="w-5 h-5 mr-2 text-accent-tropical"></i><strong>Terpènes Uniques :</strong> Combinaison fruitée, acidulée et de légères notes chimiques/gazeuses.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">3. Les Effets : High Cérébral Énergisant</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-secondary-tropical p-6 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-secondary-tropical mb-3 flex items-center"><i data-lucide="brain-circuit" class="w-7 h-7 mr-2"></i>Cérébraux (Sativa Fort)</h3>
+                        <p class="text-secondary-tropical">Un high puissant, euphorique et durable qui stimule la **créativité**, la **concentration** et l'**énergie**. Parfait pour la journée.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3 flex items-center"><i data-lucide="body" class="w-7 h-7 mr-2"></i>Corporels (Léger)</h3>
+                        <p class="text-gray-700">Bien que Sativa-dominante, elle offre une **légère relaxation** corporelle, sans sédation, permettant de rester actif et lucide.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">4. Bienfaits Potentiels</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-center bg-gray-50 p-4 rounded-lg"><i data-lucide="smile" class="w-8 h-8 mr-4 text-primary-tropical"></i><div><h4 class="font-semibold text-gray-900">Amélioration de l'Humeur</h4><p class="text-gray-600 text-sm">Effet euphorisant et anti-stress.</p></div></div>
+                    <div class="flex items-center bg-gray-50 p-4 rounded-lg"><i data-lucide="lightbulb" class="w-8 h-8 mr-4 text-primary-tropical"></i><div><h4 class="font-semibold text-gray-900">Stimulation Créative</h4><p class="text-gray-600 text-sm">Idéale pour les activités artistiques ou sociales.</p></div></div>
+                    <div class="flex items-center bg-gray-50 p-4 rounded-lg"><i data-lucide="chef-hat" class="w-8 h-8 mr-4 text-primary-tropical"></i><div><h4 class="font-semibold text-gray-900">Augmentation de l'Appétit</h4><p class="text-gray-600 text-sm">Connue pour donner la "foncedalle" (munchies).</p></div></div>
+                    <div class="flex items-center bg-gray-50 p-4 rounded-lg"><i data-lucide="alarm-check" class="w-8 h-8 mr-4 text-primary-tropical"></i><div><h4 class="font-semibold text-gray-900">Énergie et Concentration</h4><p class="text-gray-600 text-sm">Aide à démarrer la journée ou des tâches complexes.</p></div></div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">5. Un Classique Exotique</h2>
+                <div class="text-center max-w-2xl mx-auto">
+                    <p class="text-lg text-gray-700 mb-6">
+                        La Tropical Tangie est l'option parfaite pour les amateurs de **Sativa fruitée**. Son profil terpénique unique, alliant agrumes et diesel, est inimitable, offrant une expérience puissante, joyeuse et remarquablement savoureuse.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <span class="bg-secondary-tropical text-secondary-tropical px-4 py-2 rounded-full font-medium">Cocktail d'Agrumes</span>
+                       <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-medium">High Énergique</span>
+                       <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full font-medium">Dominance Sativa</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="p-4 bg-gray-50 border-t border-gray-200 flex justify-between items-center">
+            <button id="prevBtn" class="bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center">
+                <i data-lucide="arrow-left" class="w-5 h-5 mr-2"></i> Précédent
+            </button>
+            <span id="slideCounter" class="text-sm text-gray-600 font-medium">1 / 6</span>
+            <button id="nextBtn" class="bg-primary-tropical text-white font-bold py-2 px-4 rounded-lg hover:bg-orange-700 transition-colors flex items-center">
+                Suivant <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+
+            const slides = document.querySelectorAll('.slide');
+            const nextBtn = document.getElementById('nextBtn');
+            const prevBtn = document.getElementById('prevBtn');
+            const progressBar = document.getElementById('progressBar');
+            const slideCounter = document.getElementById('slideCounter');
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === index);
+                });
+                
+                // Update progress bar
+                const progressPercentage = ((index + 1) / totalSlides) * 100;
+                progressBar.style.width = `${progressPercentage}%`;
+
+                // Update counter
+                slideCounter.textContent = `${index + 1} / ${totalSlides}`;
+                
+                // Update button states
+                prevBtn.disabled = index === 0;
+                nextBtn.disabled = index === totalSlides - 1;
+
+                if (index === totalSlides - 1) {
+                    // Couleur du bouton Terminer en orange
+                    nextBtn.classList.remove('bg-primary-tropical', 'hover:bg-orange-700');
+                    nextBtn.classList.add('bg-primary-tropical', 'hover:bg-orange-700');
+                    nextBtn.innerHTML = 'Terminer <i data-lucide="check-circle" class="w-5 h-5 ml-2"></i>';
+                } else {
+                    // Couleur du bouton Suivant en orange
+                    nextBtn.classList.remove('bg-primary-tropical', 'hover:bg-orange-700');
+                    nextBtn.classList.add('bg-primary-tropical', 'hover:bg-orange-700');
+                    nextBtn.innerHTML = 'Suivant <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>';
+                }
+                lucide.createIcons();
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Initialize first slide
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
